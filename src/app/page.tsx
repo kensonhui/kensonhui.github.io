@@ -31,8 +31,8 @@ export default function Home() {
          after:w-2/3
          after:translate-x-1/3
          after:bg-gradient-conic
-         after:from-sky-400
-         after:via-blue-400
+       after:from-sky-400
+       after:via-blue-400
          after:blur-3xl after:content-['']
          after:absolute
          after:dark:from-sky-900
@@ -63,8 +63,14 @@ export default function Home() {
                   (previously Ceridian)
                 </li>
                 <li>
-                  Shipped speedy automation software at{" "}
+                  Shipped speedy automations at{" "}
                   <p className="font-semibold inline-block">The Cooperators</p>
+                </li>
+                <li>
+                  Created a dashboard for an IoT Smart Home at{" "}
+                  <p className="font-semibold inline-block">
+                    Zogrox Group Inc.
+                  </p>
                 </li>
               </ul>
               <SocialTab />
@@ -90,8 +96,8 @@ export default function Home() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                working with friends to make reading research papers more social
-                and interactive
+                working with friends to make reading papers social and
+                interactive
               </a>
             </li>
             <li>
@@ -100,9 +106,8 @@ export default function Home() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                contributing to data processing tasks for tackling EEG image
-                reconstruction. The team submitted to NeurIPS 2024, check it out
-                here!
+                contributing to data preprocessing tackling EEG image
+                reconstruction
               </a>
             </li>
             <li>
