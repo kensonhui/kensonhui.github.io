@@ -7,7 +7,7 @@ const basePath = process.env.BASE_PATH || "";
 export default function Home() {
   return (
     <main className="h-screen w-full">
-      <div className="relative w-full h-full min-h-[42rem] grid place-items-center ">
+      <div className="relative w-full h-full min-h-[56rem] grid place-items-center ">
         <section
           className="
           relative
@@ -42,7 +42,7 @@ export default function Home() {
          "
         >
           <div className="z-10 flex items-center flex-col-reverse md:flex-row">
-            <div className="w-full max-w-[30rem] p-4 mt-23 md:mr-10">
+            <div className="w-full max-w-[36rem] p-4 mt-23 md:mr-10">
               <p className="text-3xl font-semibold text-center md:mr-8">
                 Hi, I'm Kenson! 👋
               </p>
@@ -54,7 +54,7 @@ export default function Home() {
               <p className="mt-3 text-lg mb-1">Previously, I...</p>
               <ul className="list-disc ml-5 space-y-2">
                 <li>
-                  Built ML proof-of-concepts to speed workflows at{" "}
+                  Built ML proof-of-concepts to streamline workflows at{" "}
                   <p className="font-semibold inline-block">WSIB</p>{" "}
                 </li>
                 <li>
@@ -86,11 +86,11 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <div className="w-full  sm:px-4 lg:px-32 2xl:px-96 pb-16 ">
-        <div className="flex flex-col items-center lg:flex-row">
-          <div className="rounded-md py-6 px-4 sm:px-10">
+      <div className="w-full pb-16  grid place-items-center">
+        <div className="flex flex-col items-center lg:flex-row w-full max-w-[60rem] space-x-4">
+          <div>
             <p className="text-xl sm:text-2xl">Recently, I've been...</p>
-            <ul className="list-disc mt-4 ml-5 space-y-2">
+            <ul className="list-disc mt-4 space-y-2">
               <li>
                 <a
                   href="https://ourslash.company/"
@@ -107,7 +107,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  contributing to data preprocessing tackling EEG image
+                  researching data preprocessing for tackling EEG image
                   reconstruction
                 </a>
               </li>
