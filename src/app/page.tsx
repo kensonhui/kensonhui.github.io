@@ -78,6 +78,7 @@ export default function Home() {
               src="/KensonTree.jpeg"
               width="248"
               height="248"
+              priority
             ></Image>
           </div>
         </section>
