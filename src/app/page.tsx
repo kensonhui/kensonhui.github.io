@@ -23,7 +23,7 @@ export default function Home() {
          before:content-['']
          before:dark:bg-gradient-to-br
          before:dark:from-transparent
-         before:dark:to-blue-700
+         before:dark:to-blue-600
          before:dark:opacity-70
          before:lg:h-[360px]
          sm:before:w-[670px]
@@ -35,7 +35,7 @@ export default function Home() {
          after:translate-x-1/3
          after:bg-gradient-conic
          after:from-sky-400
-         after:via-blue-700
+         after:via-blue-600
          after:blur-3xl after:content-['']
          after:absolute
          after:dark:from-sky-900
@@ -84,20 +84,28 @@ export default function Home() {
         </section>
       </div>
       <div className="w-full flex sm:px-2 md:px-16 lg:px-32 2xl:px-96 pb-16 ">
-        <div className="rounded-md shadow-md py-6 px-10">
+        <div className="rounded-md py-6 px-10">
           <p className="text-2xl">Recently, I've been...</p>
-          <ul className="list-disc mt-2 space-y-2">
+          <ul className="list-disc mt-4 space-y-2">
             <li>
-              <Link href="https://ourslash.company/">
+              <a
+                href="https://ourslash.company/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 working with friends to make reading research papers more social
                 and interactive
-              </Link>
+              </a>
             </li>
             <li>
-              <Link href="https://ourslash.company/">
+              <a
+                href="https://arxiv.org/abs/2404.05553"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 contributing to data processing to tackle EEG image
                 reconstruction. We submitted to NeurIPS 2024, check it out here!
-              </Link>
+              </a>
             </li>
             <li>
               marketing for a dessert place opening soon in Waterloo, yum!
