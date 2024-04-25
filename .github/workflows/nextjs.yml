@@ -48,7 +48,7 @@ jobs:
             echo "Unable to determine package manager"
             exit 1
           fi
-      name: Set up Environment Variables
+      - name: Set up Environment Variables
          env:
           BASE_PATH: /website
         run: |
