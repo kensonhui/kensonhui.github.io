@@ -11,14 +11,9 @@ import { ToastAction } from "@/components/ui/toast";
 import { Switch } from "./ui/switch";
 import { useTheme } from "next-themes";
 import { Label } from "./ui/label";
+import SunIcon from "@radix-ui/react-icons";
 
 const email = "kenson.hui22@gmail.com";
-
-function openInNewTab(url: string) {
-  if (window) {
-    window.open(url, "_blank").focus();
-  }
-}
 
 const SocialTab = () => {
   const { setTheme } = useTheme();
@@ -33,33 +28,36 @@ const SocialTab = () => {
             toast({
               title: "Email copied!",
               description: `${email} has been saved to your clipboard.`,
-              duration: 1000,
+              duration: 1500,
             });
           }}
         />
-        <IconButton
-          Icon={LinkedInLogoIcon}
-          onClick={() => {
-            openInNewTab("https://www.linkedin.com/in/kensonhui/");
-          }}
-        />
-        <IconButton
-          Icon={GitHubLogoIcon}
-          onClick={() => {
-            openInNewTab("https://github.com/kensonhui");
-          }}
-        />
+        <a
+          href="https://www.linkedin.com/in/kensonhui/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <IconButton Icon={LinkedInLogoIcon} onClick={() => {}} />
+        </a>
+        <a
+          href="https://github.com/kensonhui"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <IconButton Icon={GitHubLogoIcon} onClick={() => {}} />
+        </a>
       </div>
       <div className="flex items-center space-x-2 left-auto ml-auto">
         <Switch
           id="light-mode"
           className=""
+          defaultChecked={false}
           onCheckedChange={(checked) =>
             checked ? setTheme("light") : setTheme("dark")
           }
         />
         <Label htmlFor="light-mode" className="cursor-pointer">
-          Light Mode
+          Lights
         </Label>
       </div>
     </div>
