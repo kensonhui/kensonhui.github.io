@@ -103,8 +103,9 @@ export default function Home() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                contributing to data processing to tackle EEG image
-                reconstruction. We submitted to NeurIPS 2024, check it out here!
+                contributing to data processing tasks for tackling EEG image
+                reconstruction. The team submitted to NeurIPS 2024, check it out
+                here!
               </a>
             </li>
             <li>
