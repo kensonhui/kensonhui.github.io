@@ -14,14 +14,15 @@ export default function Home() {
           h-full
          flex place-items-center
          before:absolute before:h-[500px] before:w-full
-         before:-translate-x-1/2 before:rounded-full
-         before:bg-gradient-radial before:from-sky-800
-         before:to-transparent before:blur-2xl
-         before:content-['']
+         before:-translate-x-1/3 before:rounded-full
+         before:bg-gradient-radial before:from-sky-700
+         before:to-transparent before:blur-3xl
+         before:content-['']  
          before:dark:bg-gradient-to-br
          before:dark:from-transparent
          before:dark:to-blue-600
          before:dark:opacity-70
+         before:light:opacity-60
          before:lg:h-[360px]
          sm:before:w-[670px]
          before:animate-pulse
@@ -31,7 +32,7 @@ export default function Home() {
          after:translate-x-1/3
          after:bg-gradient-conic
          after:from-sky-400
-         after:via-blue-600
+         after:via-blue-400
          after:blur-3xl after:content-['']
          after:absolute
          after:dark:from-sky-900
@@ -53,16 +54,16 @@ export default function Home() {
               <p className="mt-3 text-lg mb-1">Previously, I...</p>
               <ul className="list-disc ml-5 space-y-2">
                 <li>
-                  Built apps with ML to speed workflows at{" "}
+                  Built ML proof-of-concepts to speed workflows at{" "}
                   <p className="font-semibold inline-block">WSIB</p>{" "}
                 </li>
                 <li>
-                  Made the UI/UX more clean and snappy at{" "}
+                  Made the UI/UX snappier and cleaner at{" "}
                   <p className="font-semibold inline-block"> Dayforce</p>{" "}
                   (previously Ceridian)
                 </li>
                 <li>
-                  Created speedy automation software at{" "}
+                  Shipped speedy automation software at{" "}
                   <p className="font-semibold inline-block">The Cooperators</p>
                 </li>
               </ul>
@@ -112,7 +113,7 @@ export default function Home() {
         <Image
           src={`${basePath}/SocraticaDemo.JPG`}
           alt="Group of students smiling holding name tags, one student to the right is wearing an EEG headset"
-          className="rounded-lg"
+          className="rounded-lg shadow-md m-2"
           width="400"
           height="400"
         ></Image>

@@ -18,8 +18,8 @@ const SocialTab = () => {
   const { theme, setTheme } = useTheme();
   const { toast } = useToast();
   return (
-    <div className="flex mt-3 pl-5 ">
-      <div className="flex space-x-3 ">
+    <div className="flex mt-3 pl-5">
+      <div className="flex space-x-4">
         <IconButton
           Icon={EnvelopeClosedIcon}
           onClick={() => {
@@ -46,7 +46,7 @@ const SocialTab = () => {
           <IconButton Icon={GitHubLogoIcon} onClick={() => {}} />
         </a>
       </div>
-      <div className="flex items-center space-x-2 left-auto ml-auto">
+      <div className="flex items-center space-x-2 left-auto ml-auto transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
         <Switch
           id="light-mode"
           className=""
