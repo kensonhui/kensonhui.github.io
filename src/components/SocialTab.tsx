@@ -11,7 +11,6 @@ import { ToastAction } from "@/components/ui/toast";
 import { Switch } from "./ui/switch";
 import { useTheme } from "next-themes";
 import { Label } from "./ui/label";
-import SunIcon from "@radix-ui/react-icons";
 
 const email = "kenson.hui22@gmail.com";
 
