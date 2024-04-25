@@ -86,42 +86,44 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <div className="w-full flex flex-col items-center lg:flex-row sm:px-4 lg:px-32 2xl:px-96 pb-16 ">
-        <div className="rounded-md py-6 px-4 sm:px-10">
-          <p className="text-xl sm:text-2xl">Recently, I've been...</p>
-          <ul className="list-disc mt-4 ml-5 space-y-2">
-            <li>
-              <a
-                href="https://ourslash.company/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                working with friends to make reading papers social and
-                interactive
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://arxiv.org/abs/2404.05553"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                contributing to data preprocessing tackling EEG image
-                reconstruction
-              </a>
-            </li>
-            <li>
-              marketing for a dessert place opening soon in Waterloo, yum!
-            </li>
-          </ul>
+      <div className="w-full  sm:px-4 lg:px-32 2xl:px-96 pb-16 ">
+        <div className="flex flex-col items-center lg:flex-row">
+          <div className="rounded-md py-6 px-4 sm:px-10">
+            <p className="text-xl sm:text-2xl">Recently, I've been...</p>
+            <ul className="list-disc mt-4 ml-5 space-y-2">
+              <li>
+                <a
+                  href="https://ourslash.company/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  working with friends to make reading papers social and
+                  interactive
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://arxiv.org/abs/2404.05553"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  contributing to data preprocessing tackling EEG image
+                  reconstruction
+                </a>
+              </li>
+              <li>
+                marketing for a dessert place opening soon in Waterloo, yum!
+              </li>
+            </ul>
+          </div>
+          <Image
+            src={`${basePath}/SocraticaDemo.JPG`}
+            alt="Group of students smiling holding name tags, one student to the right is wearing an EEG headset"
+            className="rounded-lg shadow-md m-2"
+            width="400"
+            height="400"
+          ></Image>
         </div>
-        <Image
-          src={`${basePath}/SocraticaDemo.JPG`}
-          alt="Group of students smiling holding name tags, one student to the right is wearing an EEG headset"
-          className="rounded-lg shadow-md m-2"
-          width="400"
-          height="400"
-        ></Image>
       </div>
 
       <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left"></div>
