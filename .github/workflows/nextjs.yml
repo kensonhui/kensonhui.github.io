@@ -49,7 +49,7 @@ jobs:
             exit 1
           fi
       - name: Set up Environment Variables
-         env:
+        env:
           BASE_PATH: /website
         run: |
           echo "" > .env.local
