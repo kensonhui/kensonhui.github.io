@@ -1,7 +1,5 @@
 import Image from "next/image";
 import SocialTab from "@/components/SocialTab";
-import getConfig from "next/config";
-import ProjectsCarousel from "@/components/ProjectsCarousel";
 
 const basePath = process.env.BASE_PATH || "";
 
@@ -44,7 +42,7 @@ export default function Home() {
         >
           <div className="z-10 flex items-center flex-col-reverse md:flex-row">
             <div className="w-full max-w-[36rem] p-4 mt-23 md:mr-10">
-              <p className="text-3xl font-semibold text-center md:mr-8">
+              <p className="text-3xl font-bold text-center md:mr-8">
                 Hi, I'm Kenson! 👋
               </p>
               <p className="mt-3 text-center ">
@@ -56,22 +54,20 @@ export default function Home() {
               <ul className="list-disc ml-5 space-y-2">
                 <li>
                   Built ML proof-of-concepts to streamline workflows at{" "}
-                  <p className="font-semibold inline-block">WSIB</p>{" "}
+                  <p className="font-bold inline-block">WSIB</p>{" "}
                 </li>
                 <li>
                   Made the UI/UX snappier and cleaner at{" "}
-                  <p className="font-semibold inline-block"> Dayforce</p>{" "}
+                  <p className="font-bold inline-block"> Dayforce</p>{" "}
                   (previously Ceridian)
                 </li>
                 <li>
                   Shipped speedy automations at{" "}
-                  <p className="font-semibold inline-block">The Cooperators</p>
+                  <p className="font-bold inline-block">The Cooperators</p>
                 </li>
                 <li>
                   Created a dashboard for an IoT Smart Home at{" "}
-                  <p className="font-semibold inline-block">
-                    Zogrox Group Inc.
-                  </p>
+                  <p className="font-bold inline-block">Zogrox Group Inc.</p>
                 </li>
               </ul>
               <SocialTab />
