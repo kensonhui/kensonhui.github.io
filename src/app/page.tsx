@@ -1,12 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
-import {
-  LinkedInLogoIcon,
-  GitHubLogoIcon,
-  EnvelopeClosedIcon,
-} from "@radix-ui/react-icons";
-import IconButton from "@/components/IconButton";
 import SocialTab from "@/components/SocialTab";
+import getConfig from "next/config";
+
+const basePath = process.env.BASE_PATH;
 
 export default function Home() {
   return (
@@ -75,7 +71,7 @@ export default function Home() {
             <Image
               alt="Kenson climbing a tree"
               className="rounded-full shadow-lg mb-5 md:mb-0"
-              src="/KensonTree.jpeg"
+              src={`${basePath}/KensonTree.jpeg`}
               width="248"
               height="248"
               priority
@@ -114,7 +110,7 @@ export default function Home() {
           </ul>
         </div>
         <Image
-          src="/SocraticaDemo.JPG"
+          src={`${basePath}/SocraticaDemo.JPG`}
           alt="Group of students smiling holding name tags, one student to the right is wearing an EEG headset"
           className="rounded-lg"
           width="400"
