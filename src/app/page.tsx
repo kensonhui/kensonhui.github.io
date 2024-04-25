@@ -84,17 +84,17 @@ export default function Home() {
         </section>
       </div>
       <div className="w-full pb-16 grid place-items-center ">
-        <div className="flex flex-col items-center justify-center md:flex-row w-full max-w-[60rem] space-x-4 p-6">
-          <div className="max-w-[24rem]">
+        <div className="flex flex-col items-center justify-center md:flex-row w-full max-w-[60rem] space-x-4 p-8">
+          <div className="max-w-[36rem]">
             <p className="text-xl sm:text-2xl">Recently, I've been...</p>
-            <ul className="list-disc mt-4 space-y-2">
+            <ul className="list-disc mt-4 space-y-2 ml-2">
               <li>
                 <a
                   href="https://ourslash.company/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  working to make reading academic papers social and interactive
+                  Working to make reading academic papers social and interactive
                 </a>
               </li>
               <li>
@@ -103,12 +103,12 @@ export default function Home() {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  tackling data preprocessing for research in EEG image
+                  Tackling data preprocessing for research in EEG image
                   reconstruction
                 </a>
               </li>
               <li>
-                marketing for a dessert place opening soon in Waterloo, yum!
+                Marketing for a dessert place opening soon in Waterloo, yum!
               </li>
             </ul>
           </div>
