@@ -1,6 +1,7 @@
 import Image from "next/image";
 import SocialTab from "@/components/SocialTab";
 import getConfig from "next/config";
+import ProjectsCarousel from "@/components/ProjectsCarousel";
 
 const basePath = process.env.BASE_PATH || "";
 
@@ -86,8 +87,8 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <div className="w-full pb-16  grid place-items-center">
-        <div className="flex flex-col items-center justify-center lg:flex-row w-full max-w-[60rem] space-x-4">
+      <div className="w-full pb-16 grid place-items-center ">
+        <div className="flex flex-col items-center justify-center md:flex-row w-full max-w-[60rem] space-x-4 p-6">
           <div className="max-w-[24rem]">
             <p className="text-xl sm:text-2xl">Recently, I've been...</p>
             <ul className="list-disc mt-4 space-y-2">
@@ -97,8 +98,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  working with friends to make reading papers social and
-                  interactive
+                  working to make reading academic papers social and interactive
                 </a>
               </li>
               <li>
@@ -119,14 +119,12 @@ export default function Home() {
           <Image
             src={`${basePath}/SocraticaDemo.JPG`}
             alt="Group of students smiling holding name tags, one student to the right is wearing an EEG headset"
-            className="rounded-lg shadow-md m-2"
+            className="rounded-lg shadow-md m-2 mt-8 md:mt-0"
             width="400"
             height="400"
           ></Image>
         </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left"></div>
     </main>
   );
 }
