@@ -7,7 +7,7 @@ const basePath = process.env.BASE_PATH || "";
 export default function Home() {
   return (
     <main className="h-screen w-full">
-      <div className="relative w-full h-full min-h-[32rem] grid place-items-center ">
+      <div className="relative w-full h-full min-h-[42rem] grid place-items-center ">
         <section
           className="
           relative
@@ -41,7 +41,7 @@ export default function Home() {
          "
         >
           <div className="z-10 flex items-center flex-col-reverse md:flex-row">
-            <div className="w-full max-w-[30rem] sm:p-4 mt-23 md:mr-10">
+            <div className="w-full max-w-[30rem] p-4 mt-23 md:mr-10">
               <p className="text-3xl font-semibold text-center md:mr-8">
                 Hi, I'm Kenson! 👋
               </p>
@@ -79,10 +79,10 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <div className="w-full flex flex-col items-center lg:flex-row px-4 lg:px-32 2xl:px-96 pb-16 ">
-        <div className="rounded-md py-6 mx-10">
-          <p className="text-2xl">Recently, I've been...</p>
-          <ul className="list-disc mt-4 space-y-2">
+      <div className="w-full flex flex-col items-center lg:flex-row sm:px-4 lg:px-32 2xl:px-96 pb-16 ">
+        <div className="rounded-md py-6 px-4 sm:px-10">
+          <p className="text-xl sm:text-2xl">Recently, I've been...</p>
+          <ul className="list-disc mt-4 ml-5 space-y-2">
             <li>
               <a
                 href="https://ourslash.company/"
