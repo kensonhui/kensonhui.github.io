@@ -2,15 +2,16 @@ import Image from "next/image";
 import SocialTab from "@/components/SocialTab";
 import getConfig from "next/config";
 
-const basePath = process.env.BASE_PATH;
+const basePath = process.env.BASE_PATH || "";
 
 export default function Home() {
   return (
-    <main className="h-screen">
-      <div className="w-full h-full grid place-items-center">
+    <main className="h-screen w-full">
+      <div className="relative w-full h-full grid place-items-center">
         <section
           className="
           relative
+          h-full
          flex place-items-center
          before:absolute before:h-[500px] before:w-full
          before:-translate-x-1/2 before:rounded-full
@@ -25,9 +26,8 @@ export default function Home() {
          sm:before:w-[670px]
          before:animate-pulse
          after:-z-20
-         sm:after:w-[640px]
          after:h-[480px]
-         after:w-full
+         after:w-2/3
          after:translate-x-1/3
          after:bg-gradient-conic
          after:from-sky-400
@@ -41,7 +41,7 @@ export default function Home() {
          "
         >
           <div className="z-10 flex items-center flex-col-reverse md:flex-row">
-            <div className="w-[30rem] mt-23 md:mr-10">
+            <div className="w-full max-w-[30rem] mt-23 md:mr-10">
               <p className="text-3xl font-semibold text-center md:mr-8">
                 Hi, I'm Kenson! 👋
               </p>
@@ -79,8 +79,8 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <div className="w-full flex sm:px-2 md:px-16 lg:px-32 2xl:px-96 pb-16 ">
-        <div className="rounded-md py-6 px-10">
+      <div className="w-full flex flex-col items-centerlg:flex-row px-4 lg:px-32 2xl:px-96 pb-16 ">
+        <div className="rounded-md py-6 mx-10">
           <p className="text-2xl">Recently, I've been...</p>
           <ul className="list-disc mt-4 space-y-2">
             <li>
