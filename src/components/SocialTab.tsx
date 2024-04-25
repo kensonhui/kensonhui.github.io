@@ -15,7 +15,7 @@ import { Label } from "./ui/label";
 const email = "kenson.hui22@gmail.com";
 
 const SocialTab = () => {
-  const { setTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
   const { toast } = useToast();
   return (
     <div className="flex mt-3 pl-5 ">
@@ -50,7 +50,7 @@ const SocialTab = () => {
         <Switch
           id="light-mode"
           className=""
-          defaultChecked={false}
+          defaultChecked={theme == "light"}
           onCheckedChange={(checked) =>
             checked ? setTheme("light") : setTheme("dark")
           }
