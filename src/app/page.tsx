@@ -87,8 +87,8 @@ export default function Home() {
         </section>
       </div>
       <div className="w-full pb-16  grid place-items-center">
-        <div className="flex flex-col items-center lg:flex-row w-full max-w-[60rem] space-x-4">
-          <div>
+        <div className="flex flex-col items-center justify-center lg:flex-row w-full max-w-[60rem] space-x-4">
+          <div className="max-w-[24rem]">
             <p className="text-xl sm:text-2xl">Recently, I've been...</p>
             <ul className="list-disc mt-4 space-y-2">
               <li>
@@ -107,7 +107,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  researching data preprocessing for tackling EEG image
+                  tackling data preprocessing for research in EEG image
                   reconstruction
                 </a>
               </li>
