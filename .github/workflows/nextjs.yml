@@ -48,12 +48,6 @@ jobs:
             echo "Unable to determine package manager"
             exit 1
           fi
-      - name: Set up Environment Variables
-         env:
-          BASE_PATH: /website
-        run: |
-          echo "" > .env.local
-          echo BASE_PATH=$BASE_PATH >> .env.local
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
