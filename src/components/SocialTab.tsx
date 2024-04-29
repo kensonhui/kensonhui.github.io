@@ -50,7 +50,7 @@ const SocialTab = () => {
         <Switch
           id="light-mode"
           className=""
-          defaultChecked={theme == "light"}
+          checked={theme == "light"}
           onCheckedChange={(checked) =>
             checked ? setTheme("light") : setTheme("dark")
           }
