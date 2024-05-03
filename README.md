@@ -1,6 +1,7 @@
-## Kenson Hui
+## Kenson Hui's Portfolio Website
 
-Hi! Welcome to my website! This is built off the default initial NextJS project.
+This is built off the default initial NextJS project with all styling done through TailwindCSS. <img width="1148" alt="Screenshot 2024-05-03 at 12 28 47 AM" src="https://github.com/kensonhui/kensonhui.github.io/assets/60726802/2512dc15-9347-46d9-8293-1ff5e6de6602">
+
 
 ### Development Mode
 
