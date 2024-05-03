@@ -6,7 +6,7 @@ const basePath = process.env.BASE_PATH || "";
 
 export default function Home() {
   return (
-    <main className="h-screen w-full">
+    <main className="h-screen w-full min-h-[52rem]">
       <div className="relative w-full h-full grid place-items-center ">
         <section
           className="

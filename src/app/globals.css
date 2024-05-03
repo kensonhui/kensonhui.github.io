@@ -100,7 +100,7 @@
         before:animate-pulse-slow
         after:opacity-70
         after:-z-20
-        after:h-[600px]
+        after:h-1/2
         after:sm:h-[480px]
         after:w-2/3
         after:md:w-4/5
