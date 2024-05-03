@@ -74,3 +74,48 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .glowing {
+    @apply before:absolute 
+        before:h-[500px] 
+        before:w-full 
+        before:-translate-x-1/4
+        before:translate-y-1/4
+        before:md:translate-y-0
+        before:rounded-full
+        before:bg-gradient-radial
+        before:from-purple-800
+        before:via-purple-400
+        before:to-transparent
+        before:opacity-50
+        before:blur-3xl
+        before:content-['']  
+        before:dark:bg-gradient-to-br
+        before:dark:from-transparent
+        before:dark:to-blue-500
+        before:dark:opacity-70
+        before:lg:h-[460px]
+        sm:before:w-[680px]
+        before:animate-pulse-slow
+        after:opacity-70
+        after:-z-20
+        after:h-[600px]
+        after:sm:h-[480px]
+        after:w-2/3
+        after:md:w-4/5
+        after:translate-x-1/2
+        after:translate-y-1/4
+        after:md:translate-x-0
+        after:md:translate-y-0
+        after:bg-gradient-conic
+      after:from-sky-500
+      after:to-blue-400
+        after:blur-3xl after:content-['']
+        after:absolute
+      after:dark:from-sky-400
+      after:dark:via-[#0a2988]
+        after:dark:opacity-40
+        after:animate-pulse-slow;
+  }
+}
