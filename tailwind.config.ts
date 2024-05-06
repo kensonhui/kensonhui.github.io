@@ -27,6 +27,7 @@ const config = {
         "pulse-slow": "pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        wiggle: "wiggle 200ms ease-in-out",
       },
       colors: {
         border: "hsl(var(--border))",
@@ -79,14 +80,18 @@ const config = {
         },
         "pulse-slow": {
           "0%": {
-            opacity: "0.45",
+            opacity: "0.50",
           },
           "100%": {
-            opacity: "0.45",
+            opacity: "0.50",
           },
           "50%": {
-            opacity: "0.3",
+            opacity: "0.25",
           },
+        },
+        wiggle: {
+          "0%, 100%": { transform: "rotate(-3deg)" },
+          "50%": { transform: "rotate(3deg)" },
         },
       },
     },
