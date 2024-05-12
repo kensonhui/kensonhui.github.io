@@ -1,0 +1,38 @@
+import React from "react";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
+import { Separator } from "@/components/ui/separator";
+import { projects } from "./data/projects";
+import { ProjectShowcase } from "@/components/ProjectShowcase";
+
+const Projects = () => {
+  return (
+    <div className="md:m-4 xs:w-full sm:w-[550px] md:w-[750px] lg:w-[864px]">
+      <div className="flex items-center justify-between">
+        <div className="space-y-1">
+          <h2 className="text-2xl font-semibold tracking-tight">Projects</h2>
+          <p className="text-sm text-muted-foreground">
+            These are highlights of my favourite projects. Hope you enjoy!
+          </p>
+        </div>
+      </div>
+      <Separator className="my-4" />
+      <ScrollArea className="">
+        <div className="flex flex-col md:flex-row space-x-4 space-y-4 px-4 py-3 justify-center items-center">
+          {projects.map((project) => (
+            <ProjectShowcase
+              key={project.name}
+              album={project}
+              className="w-[350px] md:w-[300px]"
+              aspectRatio="portrait"
+              width={350}
+              height={330}
+            />
+          ))}
+        </div>
+        <ScrollBar orientation="horizontal" />
+      </ScrollArea>
+    </div>
+  );
+};
+
+export default Projects;

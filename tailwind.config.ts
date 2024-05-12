@@ -89,9 +89,13 @@ const config = {
             opacity: "0.25",
           },
         },
-        wiggle: {
-          "0%, 100%": { transform: "rotate(-3deg)" },
-          "50%": { transform: "rotate(3deg)" },
+        appear: {
+          "0%": {
+            opacity: "0",
+          },
+          "100%": {
+            opacity: "1",
+          },
         },
       },
     },

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import SocialTab from "@/components/SocialTab";
+import Projects from "@/components/Projects";
 
 const basePath = process.env.BASE_PATH || "";
 
@@ -11,8 +12,10 @@ export default function Home() {
         className="
           relative
           h-full
+          min-h-screen
           flex place-items-center
           glowing
+          animate-[appear_0ms_cubic-bezier(0.4,_0,_0.2,_1)_1500ms_forwards]
          "
       >
         <div className="z-10 flex items-center flex-col-reverse md:flex-row">
@@ -57,6 +60,7 @@ export default function Home() {
           ></Image>
         </div>
       </section>
+      <Projects />
     </main>
   );
 }
