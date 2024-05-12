@@ -6,7 +6,7 @@ import { ProjectShowcase } from "@/components/ProjectShowcase";
 
 const Projects = () => {
   return (
-    <div className="md:m-4 xs:w-full sm:w-[550px] md:w-[750px] lg:w-[864px]">
+    <div className="md:m-4 w-10/12 sm:w-[550px] md:w-[750px] lg:w-[864px] pb-24">
       <div className="flex items-center justify-between">
         <div className="space-y-1">
           <h2 className="text-2xl font-semibold tracking-tight">Projects</h2>
@@ -17,7 +17,7 @@ const Projects = () => {
       </div>
       <Separator className="my-4" />
       <ScrollArea className="">
-        <div className="flex flex-col md:flex-row space-x-4 space-y-4 px-4 py-3 justify-center items-center">
+        <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:px-4 py-3 justify-center align-center items-center">
           {projects.map((project) => (
             <ProjectShowcase
               key={project.name}

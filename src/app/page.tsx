@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import SocialTab from "@/components/SocialTab";
 import Projects from "@/components/Projects";
+import { ChevronDownIcon } from "@radix-ui/react-icons";
 
 const basePath = process.env.BASE_PATH || "";
 
@@ -11,9 +12,10 @@ export default function Home() {
       <section
         className="
           relative
-          h-full
-          min-h-screen
-          flex place-items-center
+          min-h-[80vh]
+          pb-8
+          flex 
+          place-items-center
           glowing
           animate-[appear_0ms_cubic-bezier(0.4,_0,_0.2,_1)_1500ms_forwards]
          "
