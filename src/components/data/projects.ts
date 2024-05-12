@@ -25,7 +25,7 @@ export const projects: Project[] = [
     url: "https://kensonhui.github.io/react-three-fiber/",
   },
   {
-    name: "Treeline - Interactive and Social Research Paper Reader",
+    name: "Treeline - Interactive and Social Paper Reading",
     artist: "Built with Eden Chan and Charles Liu",
     imagePath: "/Treeline.png",
     url: "https://treeline.vercel.app",

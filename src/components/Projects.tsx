@@ -17,12 +17,12 @@ const Projects = () => {
       </div>
       <Separator className="my-4" />
       <ScrollArea className="">
-        <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:px-4 py-3 justify-center align-center items-center">
+        <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0 md:px-4 py-3 justify-center align-center items-center">
           {projects.map((project) => (
             <ProjectShowcase
               key={project.name}
               album={project}
-              className="w-[350px] md:w-[300px]"
+              className="w-[350px] md:w-[350px]"
               aspectRatio="portrait"
               width={350}
               height={330}
