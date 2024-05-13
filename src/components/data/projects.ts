@@ -13,7 +13,7 @@ export const projects: Project[] = [
     imagePath: "/realtime-translation.gif",
     url: "https://github.com/kensonhui/Realtime-Speech-to-Speech-Translation",
     description:
-      "Using  Whisper v3 and MSSpeechT5, we created a program that can translate a conversation across 96 languages to English. This can be used for any video conferencing software with the help of virtual microphones!",
+      "Using  Whisper v3 and MS SpeechT5, we created a program that can translate a conversation across 96 languages to English. This can be used for any video conferencing software with the help of virtual microphones.",
   },
   {
     name: "wiki3",
