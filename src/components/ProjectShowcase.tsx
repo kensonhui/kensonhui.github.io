@@ -40,6 +40,9 @@ export function ProjectShowcase({
       </a>
       <div className="space-y-1 text-sm">
         <h3 className="font-medium leading-none">{album.name}</h3>
+        <p className="text-sm text-muted-foreground min-h-24 m-1">
+          {album.description}
+        </p>
         <p className="text-xs text-muted-foreground">{album.artist}</p>
       </div>
     </div>

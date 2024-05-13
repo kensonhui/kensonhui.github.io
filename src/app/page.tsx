@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import SocialTab from "@/components/SocialTab";
 import Projects from "@/components/Projects";
-import { ChevronDownIcon } from "@radix-ui/react-icons";
+import { projects } from "@/components/data/projects";
 
 const basePath = process.env.BASE_PATH || "";
 
@@ -17,7 +17,6 @@ export default function Home() {
           flex 
           place-items-center
           glowing
-          animate-[appear_0ms_cubic-bezier(0.4,_0,_0.2,_1)_1500ms_forwards]
          "
       >
         <div className="z-10 flex items-center flex-col-reverse md:flex-row">
@@ -62,7 +61,12 @@ export default function Home() {
           ></Image>
         </div>
       </section>
-      <Projects />
+      <Projects
+        title="Projects"
+        subtitle="These are highlights of my favourite projects. Hope you enjoy!"
+        projects={projects}
+        projectWidth="350px"
+      />
     </main>
   );
 }
