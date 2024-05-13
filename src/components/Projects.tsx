@@ -23,7 +23,7 @@ const Projects: React.FC<ProjectsProps> = ({ title, subtitle, projects }) => {
       </div>
       <Separator className="my-4" />
       <ScrollArea className="">
-        <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0 md:px-4 py-4 justify-center align-center items-start">
+        <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0 md:px-4 py-4 justify-center align-center items-center md:items-start">
           {projects.map((project) => (
             <ProjectShowcase
               key={project.name}
