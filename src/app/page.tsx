@@ -53,10 +53,10 @@ export default function Home() {
           </div>
           <Image
             alt="Kenson climbing a tree"
-            className="rounded-full shadow-lg mb-5 md:mb-0"
-            src={`${basePath}/KensonTree.jpeg`}
-            width="248"
-            height="248"
+            className="rounded-full shadow-lg w-[248px] h-[248px] md:w-[348px] md:h-[348px] mt-5 mb-2 md:my-0"
+            src="/headshot.jpeg"
+            width="348"
+            height="348"
             priority
           ></Image>
         </div>

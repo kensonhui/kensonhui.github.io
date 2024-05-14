@@ -14,7 +14,7 @@ interface ProjectsProps {
 
 const Projects: React.FC<ProjectsProps> = ({ title, subtitle, projects }) => {
   return (
-    <div className="md:m-4 w-10/12 sm:w-[550px] md:w-[750px] lg:w-[864px] pb-24">
+    <div className="md:m-4 w-10/12 sm:w-[550px] md:w-[964px] lg:w-[864px] pb-24">
       <div className="flex items-center justify-between">
         <div className="space-y-1">
           <h2 className="text-2xl font-semibold tracking-tight">{title}</h2>
@@ -23,12 +23,12 @@ const Projects: React.FC<ProjectsProps> = ({ title, subtitle, projects }) => {
       </div>
       <Separator className="my-4" />
       <ScrollArea className="">
-        <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0 md:px-4 py-4 justify-center align-center items-center md:items-start">
+        <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0 py-4 justify-center align-center items-center md:items-start">
           {projects.map((project) => (
             <ProjectShowcase
               key={project.name}
               album={project}
-              className="w-[350px]"
+              className="w-[300px] sm:w-[350px]"
               aspectRatio="portrait"
               width={350}
               height={330}
