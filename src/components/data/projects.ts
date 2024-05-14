@@ -23,16 +23,9 @@ export const projects: Project[] = [
     description:
       "The goal of this project is to bring true information to Web3 through transparent and decentralized voting of veracity with Decentralized Identification (DIDs).",
   },
+
   {
-    name: "React Three.js Demo",
-    artist: "Individual project",
-    imagePath: "/react-three-fiber.gif",
-    url: "https://kensonhui.github.io/react-three-fiber/",
-    description:
-      "This project was to learn how to handle 3D graphics, assets and animations within the browser using Three.js.",
-  },
-  {
-    name: "Treeline - Interactive and Social Paper Reading",
+    name: "Treeline - Supercharged Paper Reading",
     artist: "Built with Eden Chan and Charles Liu",
     imagePath: "/Treeline.png",
     url: "https://treeline.vercel.app",
@@ -46,6 +39,14 @@ export const projects: Project[] = [
     url: "https://github.com/uwblueprint/ccbc",
     description:
       "Working as part of UWBlueprint, we partnered with CCBC, a non-profit organization, to develop a streamlined application to allow authors to signup for book readings at schools and community centres.",
+  },
+  {
+    name: "React Three.js Demo",
+    artist: "Individual project",
+    imagePath: "/react-three-fiber.gif",
+    url: "https://kensonhui.github.io/react-three-fiber/",
+    description:
+      "This project was to learn how to handle 3D graphics, assets and animations within the browser using Three.js.",
   },
   {
     name: "Speaker Diarization and Sentiment Analysis",
