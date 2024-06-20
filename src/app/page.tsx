@@ -29,6 +29,10 @@ export default function Home() {
               I'm studying Computer Science and Business Administration at
               UWaterloo and Wilfrid Laurier University.
             </p>
+            <p className="text-center">
+              Incoming AI/ML Automation Intern at{" "}
+              <p className="font-bold inline-block">Nokia</p>!{" "}
+            </p>
             <p className="mt-3 text-lg mb-1">Previously, I...</p>
             <ul className="list-disc ml-5 space-y-2">
               <li>
