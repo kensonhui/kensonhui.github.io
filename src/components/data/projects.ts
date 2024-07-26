@@ -30,7 +30,7 @@ export const projects: Project[] = [
     imagePath: "/Treeline.png",
     url: "https://treeline.vercel.app",
     description:
-      "The goal of Treeline is to allow users to build their own tree of prequisite knowledge so they can dive into any paper and understand it at a depp level in a fraction of the time.",
+      "The goal of Treeline is to allow users to build their own tree of prequisite knowledge so they can dive into any paper and understand it at a deep level in a fraction of the time.",
   },
   {
     name: "Canadian Children's Book Centre",
