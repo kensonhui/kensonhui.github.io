@@ -10,11 +10,19 @@ interface ProjectsProps {
   subtitle: string;
   projects: Project[];
   projectWidth: string;
+  className: string;
 }
 
-const Projects: React.FC<ProjectsProps> = ({ title, subtitle, projects }) => {
+const Projects: React.FC<ProjectsProps> = ({
+  title,
+  subtitle,
+  projects,
+  className,
+}) => {
   return (
-    <div className="md:m-4 w-10/12 sm:w-[550px] md:w-[864px] lg:w-[964px] pb-24">
+    <div
+      className={`md:m-4 w-10/12 sm:w-[550px] md:w-[864px] lg:w-[964px] pb-24 ${className}`}
+    >
       <div className="flex items-center justify-between">
         <div className="space-y-1">
           <h2 className="text-2xl font-semibold tracking-tight">{title}</h2>
