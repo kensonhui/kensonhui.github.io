@@ -27,7 +27,7 @@ export default function Gallery({ images }: GalleryProps) {
               src={image.src}
               layout="fill"
               objectFit="cover"
-              className="rounded-lg"
+              className="rounded-lg transform group-hover:scale-110 transition-transform duration-300"
             />
           </div>
         </div>

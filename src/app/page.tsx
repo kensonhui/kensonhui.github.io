@@ -102,8 +102,8 @@ export default function Home() {
               caption: "Socratica Symposium - Moment 5",
             },
             {
-              src: "/socratica4.jpg",
-              alt: "Socratica Symposium 4",
+              src: "/demo.gif",
+              alt: "Demo of Bracketbot Bass",
               caption: "Socratica Symposium - Moment 4",
             },
             {
@@ -111,6 +111,17 @@ export default function Home() {
               alt: "Socratica Symposium",
               caption: "Helped organize the Socratica Symposium",
               gridSpan: "md:col-span-1 md:row-span-2", // 1x2 span
+            },
+            {
+              src: "/jam_night.jpg",
+              alt: "Jam Night",
+              caption: "Jam Night with friends",
+              gridSpan: "md:col-span-2 md:row-span-2", // 2x2 span
+            },
+            {
+              src: "/booth.jpg",
+              alt: "Socratica Symposium Demo Booth for EEG Image Reconstruction",
+              caption: "Image reconstruction",
             },
           ]}
         />
