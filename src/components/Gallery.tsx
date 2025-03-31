@@ -12,7 +12,7 @@ interface GalleryProps {
 
 export default function Gallery({ images }: GalleryProps) {
   return (
-    <div className="w-full max-w-7xl mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+    <div className="w-full max-w-7xl mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
       {images.map((image, index) => (
         <a
           key={index}

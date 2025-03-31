@@ -10,6 +10,7 @@ import {
   EnvelopeClosedIcon,
   LinkedInLogoIcon,
   GitHubLogoIcon,
+  TwitterLogoIcon,
 } from "@radix-ui/react-icons";
 
 const email = "kenson.hui22@gmail.com";
@@ -32,33 +33,21 @@ const SocialTab = () => {
               });
             }}
           />
-          <a
+          <IconButton
+            Icon={LinkedInLogoIcon}
             href="https://www.linkedin.com/in/kensonhui/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <IconButton Icon={LinkedInLogoIcon} onClick={() => {}} />
-          </a>
-          <a
-            href="https://github.com/kensonhui"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <IconButton Icon={GitHubLogoIcon} onClick={() => {}} />
-          </a>
-        </div>
-        <div className="flex items-center space-x-2 left-auto ml-auto transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
-          <Switch
-            id="light-mode"
-            className=""
-            checked={theme === "light"}
-            onCheckedChange={(checked) =>
-              checked ? setTheme("light") : setTheme("dark")
-            }
+            external
           />
-          <Label htmlFor="light-mode" className="cursor-pointer">
-            Lights
-          </Label>
+          <IconButton
+            Icon={GitHubLogoIcon}
+            href="https://github.com/kensonhui"
+            external
+          />
+          <IconButton
+            Icon={TwitterLogoIcon}
+            href="https://x.com/kenson_hui"
+            external
+          />
         </div>
       </div>
     </div>

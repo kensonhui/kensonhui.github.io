@@ -1,3 +1,5 @@
+import { ThemeToggle } from "@/components/ui/theme-toggle";
+
 export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full bg-blue-50/70 dark:bg-gray-800/70 backdrop-blur-md z-50">
@@ -8,7 +10,7 @@ export default function Navbar() {
         >
           KensonHui
         </a>
-        <div className="space-x-4">
+        <div className="space-x-4 flex items-center">
           <a
             href="#gallery"
             className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
@@ -27,6 +29,9 @@ export default function Navbar() {
           >
             Experience
           </a>
+          {/* <div className="flex items-center space-x-4"> */}
+          <ThemeToggle />
+          {/* </div> */}
         </div>
       </div>
     </nav>

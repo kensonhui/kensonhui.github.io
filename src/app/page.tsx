@@ -41,7 +41,7 @@ export default function Home() {
           projects, I believe in bringing the right people together! Recently,
           I've been investing time into:
         </p>
-        <ul className="mt-4 space-y-2 text-gray-500 dark:text-gray-300 text-md">
+        <ul className="mt-4 space-y-1 text-gray-500 dark:text-gray-300 text-md">
           <li className="flex items-center">
             <span className="mr-2">🎨</span>
             <span>
@@ -119,12 +119,13 @@ export default function Home() {
         id="experience"
         className="
           relative
+          w-full
         "
       >
-        <div className="w-full p-4 mt-10">
-          <p className="mt-5 text-lg font-semibold text-gray-700 dark:text-gray-200">
+        <div className="w-full mt-10">
+          <h2 className="mt-5 text-3xl font-bold text-gray-700 dark:text-gray-200">
             Previously, I...
-          </p>
+          </h2>
           <ul className="list-disc ml-5 space-y-3 text-gray-600 dark:text-gray-300">
             <li>
               Created infrastructure for Autonomous Networks at{" "}

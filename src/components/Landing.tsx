@@ -8,15 +8,14 @@ const Landing = () => (
         Hi, I'm Kenson! 👋
       </p>
       <p className="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed text-xl">
-        A scrappy, hard-working developer who thrives on tackling tough problems
-        and learning quickly.
+        A scrappy, hard-working, problem solver who learns quickly.
       </p>
       <p className="mt-4 text-gray-600 dark:text-gray-300">
         Currently a{" "}
         <span className="font-bold text-blue-600 dark:text-blue-400">
           Machine Learning Engineering Intern
         </span>{" "}
-        at Nokia on:
+        at Nokia working on:
       </p>
       <ul className="mt-4 space-y-2 text-gray-500 dark:text-gray-300 text-md">
         <li className="flex items-center">
@@ -37,7 +36,7 @@ const Landing = () => (
       </div>
     </div>
     <div
-      className="flex flex-1
+      className="flex flex-1 place-items-center justify-center
     "
     >
       <Image
