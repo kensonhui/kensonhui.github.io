@@ -18,7 +18,7 @@ const SocialTab = () => {
   const { theme, setTheme } = useTheme();
   const { toast } = useToast();
   return (
-    <div className="flex flex-col pl-5 space-y-3">
+    <div className="flex flex-col space-y-3">
       <div className="flex mt-4">
         <div className="flex space-x-4">
           <IconButton

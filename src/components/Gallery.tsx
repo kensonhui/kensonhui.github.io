@@ -6,18 +6,22 @@ interface GalleryProps {
     alt: string;
     caption: string;
     gridSpan?: string; // Optional property to define grid span
+    url?: string;
   }[];
 }
 
 export default function Gallery({ images }: GalleryProps) {
   return (
-    <div className="w-full max-w-7xl p-4 mt-10 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
+    <div className="w-full max-w-7xl mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
       {images.map((image, index) => (
-        <div
+        <a
           key={index}
-          className={`transform hover:scale-105 transition-transform duration-300 ${
+          href={image.url || "#"}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`relative transform hover:scale-[102%] transition-transform duration-300 ${
             image.gridSpan || ""
-          }`}
+          } group`}
         >
           <div className="relative w-full h-full pb-[60%]">
             {" "}
@@ -27,10 +31,13 @@ export default function Gallery({ images }: GalleryProps) {
               src={image.src}
               layout="fill"
               objectFit="cover"
-              className="rounded-lg transform group-hover:scale-110 transition-transform duration-300"
-            />
+              className="rounded-lg"
+            ></Image>
+            <div className="absolute bottom-0 left-0 w-full p-1 bg-black bg-opacity-50 text-white text-center opacity-0 group-hover:opacity-100 z-10 flex items-end">
+              <div className="w-full">{image.caption}</div>
+            </div>
           </div>
-        </div>
+        </a>
       ))}
     </div>
   );

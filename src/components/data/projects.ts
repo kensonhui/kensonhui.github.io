@@ -4,6 +4,8 @@ export interface Project {
   description?: string;
   imagePath: string;
   url: string;
+  image?: string;
+  tags?: string[];
 }
 
 export const projects: Project[] = [
