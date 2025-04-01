@@ -6,6 +6,7 @@ import { projects } from "@/components/data/projects";
 import Gallery from "@/components/Gallery";
 import Navbar from "@/components/Navbar";
 import Landing from "@/components/Landing";
+import Experience from "@/components/Experience";
 
 const basePath = process.env.BASE_PATH || "";
 
@@ -109,61 +110,13 @@ export default function Home() {
           ]}
         />
       </section>
+      <Experience />
       <Projects
         title="Projects"
         subtitle="These are highlights of my favourite projects. Hope you enjoy!"
         projects={projects}
         className="animate-fade-in"
       />
-      <section
-        id="experience"
-        className="
-          relative
-          w-full
-        "
-      >
-        <div className="w-full mt-10">
-          <h2 className="mt-5 text-3xl font-bold text-gray-700 dark:text-gray-200">
-            Previously, I...
-          </h2>
-          <ul className="list-disc ml-5 space-y-3 text-gray-600 dark:text-gray-300">
-            <li>
-              Created infrastructure for Autonomous Networks at{" "}
-              <span className="font-bold text-blue-600 dark:text-blue-400">
-                Nokia
-              </span>
-            </li>
-            <li>
-              Built ML proof-of-concepts to streamline workflows at{" "}
-              <span className="font-bold text-blue-600 dark:text-blue-400">
-                WSIB
-              </span>
-            </li>
-            <li>
-              Made the UI/UX snappier and cleaner at{" "}
-              <span className="font-bold text-blue-600 dark:text-blue-400">
-                Dayforce
-              </span>{" "}
-              (previously Ceridian)
-            </li>
-            <li>
-              Shipped speedy automations at{" "}
-              <span className="font-bold text-blue-600 dark:text-blue-400">
-                The Cooperators
-              </span>
-            </li>
-            <li>
-              Created a dashboard for an IoT Smart Home at{" "}
-              <span className="font-bold text-blue-600 dark:text-blue-400">
-                Zogrox Group Inc.
-              </span>
-            </li>
-          </ul>
-          <div className="mt-6">
-            <SocialTab />
-          </div>
-        </div>
-      </section>
     </main>
   );
 }
