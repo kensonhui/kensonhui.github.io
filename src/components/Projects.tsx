@@ -32,7 +32,7 @@ const Projects: React.FC<ProjectsProps> = ({
 
   return (
     <div id="projects" className={`w-full max-w-7xl mx-auto ${className}`}>
-      <div className="flex items-center justify-between mb-4">
+      <div className="flex items-center justify-between mb-4 py-4">
         <div className="space-y-1">
           <h2 className="text-3xl font-bold tracking-tight text-gray-800 dark:text-gray-100">
             {title}
