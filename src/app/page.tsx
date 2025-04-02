@@ -7,18 +7,27 @@ import Gallery from "@/components/Gallery";
 import Navbar from "@/components/Navbar";
 import Landing from "@/components/Landing";
 import Experience from "@/components/Experience";
+import Contact from "@/components/Contact";
 
 const basePath = process.env.BASE_PATH || "";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen h-full grid place-items-center bg-gradient-to-b from-blue-50 to-white dark:from-gray-800 dark:to-gray-900 sm:px-2 md:px-12 lg:px-16">
+    <main
+      className="
+        relative 
+        min-h-screen h-full grid 
+        place-items-center bg-gradient-to-b 
+        from-blue-50 to-white dark:from-gray-800 dark:to-gray-900
+        mt-8
+        px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20"
+    >
       <Navbar />
       <section
         id="intro"
         className="
           relative
-          h-screen
+          min-h-screen
           flex 
           place-items-center
           w-full
@@ -27,7 +36,7 @@ export default function Home() {
         <Landing />
       </section>
       <section
-        id="gallery"
+        id="passions"
         className="
           w-full
           relative
@@ -117,6 +126,7 @@ export default function Home() {
         projects={projects}
         className="animate-fade-in"
       />
+      <Contact />
     </main>
   );
 }

@@ -6,51 +6,75 @@ import Image from "next/image";
 const experiences = [
   {
     company: "Nokia",
-    role: "Infrastructure for Autonomous Networks",
+    role: "Machine Learning Engineering Intern",
+    description:
+      "Model evaluation services with ROUGE, BLEU, Perplexity. Hallucination Manadgement.",
+    logo: "/logos/nokia.png",
+    dates: "January 2025 - Present",
+  },
+  {
+    company: "Nokia",
+    role: "AI/ML Automation Engineering Intern",
     description: "Created infrastructure for Autonomous Networks",
     logo: "/logos/nokia.png",
+    dates: "September 2024 - December 2024",
   },
   {
     company: "WSIB",
-    role: "ML Proof-of-Concepts",
+    role: "Full-stack Developer",
     description: "Built ML proof-of-concepts to streamline workflows",
     logo: "/logos/wsib.jpg",
+    dates: "2020 - 2021",
   },
   {
     company: "Dayforce",
-    role: "UI/UX Improvements",
+    role: "Software Developer",
     description: "Made the UI/UX snappier and cleaner (previously Ceridian)",
     logo: "/logos/dayforce.png",
+    dates: "2019 - 2020",
   },
   {
     company: "The Cooperators",
     role: "Automation Development",
     description: "Shipped speedy automations",
     logo: "/logos/cooperators.png",
+    dates: "2018 - 2019",
   },
   {
     company: "Zogrox Group Inc.",
     role: "IoT Dashboard",
     description: "Created a dashboard for an IoT Smart Home",
     logo: "/logos/zogrox.png",
+    dates: "2017 - 2018",
   },
 ];
 
 const Experience = () => {
   return (
-    <section id="experience" className="relative w-full py-12">
-      <div className="max-w-7xl mx-auto px-4">
+    <section id="experience" className="relative w-full py-4">
+      <div className="max-w-7xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-3xl font-bold text-gray-700 dark:text-gray-200 mb-8"
+          className="text-3xl font-bold text-gray-700 dark:text-gray-200 mb-4"
         >
           {" "}
           Experience
         </motion.h2>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-lg text-gray-600 dark:text-gray-300 mb-8"
+        >
+          Over the years, I have had the opportunity to work with several
+          amazing companies, contributing to various projects and gaining
+          valuable experience. Here are some of the roles and responsibilities I
+          have undertaken:
+        </motion.p>
 
-        <div className="space-y-8">
+        <div className="space-y-8 px-4">
           {experiences.map((exp, idx) => (
             <motion.div
               key={exp.company}
@@ -81,6 +105,9 @@ const Experience = () => {
                     <p className="text-blue-600 dark:text-blue-400 font-medium">
                       {exp.role}
                     </p>
+                    <p className="text-gray-500 dark:text-gray-400">
+                      {exp.dates}
+                    </p>
                   </div>
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 mt-2">
@@ -90,16 +117,6 @@ const Experience = () => {
             </motion.div>
           ))}
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.5 }}
-          className="mt-12"
-        >
-          <SocialTab />
-        </motion.div>
       </div>
     </section>
   );
