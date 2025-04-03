@@ -9,14 +9,14 @@ const experiences = [
     role: "Machine Learning Engineering Intern",
     description:
       "Model evaluation services with ROUGE, BLEU, Perplexity. Hallucination Manadgement.",
-    logo: "/logos/nokia.png",
+    logo: "/logos/nokia.jpg",
     dates: "January 2025 - Present",
   },
   {
     company: "Nokia",
     role: "AI/ML Automation Engineering Intern",
     description: "Created infrastructure for Autonomous Networks",
-    logo: "/logos/nokia.png",
+    logo: "/logos/nokia.jpg",
     dates: "September 2024 - December 2024",
   },
   {
