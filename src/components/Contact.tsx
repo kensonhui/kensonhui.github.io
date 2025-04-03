@@ -6,7 +6,7 @@ import SocialTab from "./SocialTab";
 export default function Contact() {
   return (
     <section id="contact" className="my-8 mb-32 w-full">
-      <div className="sm:px-6 lg:px-8">
+      <div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
