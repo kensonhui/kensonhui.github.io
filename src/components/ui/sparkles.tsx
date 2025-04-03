@@ -11,8 +11,8 @@ export const SparklesCore = ({
   particleColor,
 }: {
   background?: string;
-  minSize?: number;
-  maxSize?: number;
+  minSize: number;
+  maxSize: number;
   particleDensity?: number;
   className?: string;
   particleColor?: string;
@@ -37,8 +37,7 @@ export const SparklesCore = ({
     window.addEventListener("resize", resizeCanvas);
 
     const createParticle = () => {
-      const size =
-        Math.random() * (maxSize || 2 - minSize || 1) + (minSize || 1);
+      const size = Math.random() * (maxSize - minSize) + minSize;
       const x = Math.random() * canvas.width;
       const y = Math.random() * canvas.height;
       const speedX = (Math.random() - 0.5) * 0.5;

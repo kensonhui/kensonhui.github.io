@@ -60,7 +60,7 @@ export default function Navbar() {
               className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
               onClick={() => setIsMenuOpen(false)}
             >
-              Things I've Been Up To
+              Passions
             </a>
             <a
               href="#projects"

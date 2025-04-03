@@ -93,16 +93,19 @@ export default function Contact() {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <p className="text-gray-600 dark:text-gray-400 flex items-center justify-center space-x-4">
-            Made with
+          <p className="text-gray-700 dark:text-gray-300 flex items-center justify-center space-x-4">
+            Crafted with
             <motion.span
               animate={{ scale: [1, 1.2, 1] }}
               transition={{ duration: 1.5, repeat: Infinity }}
-              className="mx-1"
+              className="mx-2"
             >
-              <Heart className="h-5 w-5 text-red-500" />
+              <Heart className="h-6 w-6 text-red-600 dark:text-red-500" />
             </motion.span>
-            by Kenson Hui
+            and dedication.
+          </p>
+          <p className="text-gray-700 dark:text-gray-300 mt-4">
+            Kenson Hui | Winter 2025
           </p>
         </motion.div>
       </div>

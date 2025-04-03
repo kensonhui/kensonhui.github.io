@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ThreeBackground } from "./ui/3d-background";
 import { TypewriterEffect } from "./ui/typewriter-effect";
 import { SparklesCore } from "./ui/sparkles";
+import Image from "next/image";
 import SocialTab from "./SocialTab";
 
 const Landing = () => {
@@ -116,7 +117,7 @@ const Landing = () => {
                   >
                     <img
                       src="/headshot.jpeg"
-                      alt="Kenson climbing a tree"
+                      alt="Photo of Kenson"
                       className="w-full h-full object-cover"
                     />
                   </motion.div>
