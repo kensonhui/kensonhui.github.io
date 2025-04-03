@@ -101,7 +101,7 @@ export default function Home() {
             {
               src: "/socratica5.jpg",
               alt: "Socratica Symposium 5",
-              caption: "Socratica Symposium - Moment 5",
+              caption: "Friends of Socratica!",
               url: "https://www.socratica.info/",
             },
             {
@@ -113,7 +113,7 @@ export default function Home() {
             {
               src: "/jam_night.jpg",
               alt: "Jam Night",
-              caption: "Jam Night with friends",
+              caption: "Jam night with friends",
               url: "https://partiful.com/e/STPtSjwy3lCAGeqegl1c",
             },
           ]}
