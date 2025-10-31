@@ -59,7 +59,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-blue-50/70 dark:bg-gray-800/70 backdrop-blur-md py-2">
+        <div className="md:hidden absolute top-full left-0 w-full bg-blue-50/95 dark:bg-gray-800/95 backdrop-blur-md py-2">
           <div className="flex flex-col space-y-2 px-4">
             <a
               href="#gallery"
@@ -81,6 +81,13 @@ export default function Navbar() {
               onClick={() => setIsMenuOpen(false)}
             >
               Experience
+            </a>
+            <a
+              href="/blog"
+              className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Blog
             </a>
           </div>
         </div>
