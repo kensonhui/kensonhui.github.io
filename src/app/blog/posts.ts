@@ -15,6 +15,26 @@ function slugify(title: string): string {
 
 const rawPosts: Array<Omit<BlogPost, "slug">> = [
   {
+    date: "2025-10-31",
+    title: "On Sacrifice",
+    content: `
+    You can have everything you want, just not all at once.
+
+    Ever since starting this journey building my startup. I knew I had to make sacrifices. I had to sacrifice stability. My full-time return offer at Nokia would've been so comfortable, and cushy. I would've been able to move out, be on track for my financial goals, and have a clear pathway to building my ML skills.
+
+    I've had to sacrifice time with my friends. Instead of hanging out with them, carving pumpkins, going clubbing, taking salsa classes, I've spent all my time at home working.
+
+    Today I told my mom that I couldn't go with her and our family to Hong Kong. It was a family trip we had been planning for a while. I hadn't thought I'd be working on a startup at this time. 
+
+    It's brutal to say no to important events of the people I cherish most, yet, I haven't felt a strong sense of regret. At the end of the day I wanted to try this flavour of life. It's a huge contrast of how I've lived my life in the past. I've always prioritized work-life balance, having a strong social life, but at some point you wonder what it's like on the other side.
+
+    That's really why I'm here, the reason I try out new things all the time, is to experience all the colours of life. 
+    
+    As painful as it is to sacrifice all these valuable components of my life, I wouldn't want it any other way. If I wasn't all in, I'd lose the chance to say I really put everything into building something for myself. I know losing that would be one of the biggest regrets of my life.
+    
+    `,
+  },
+  {
     date: "2025-10-30",
     title: "On Energy",
     content: `
