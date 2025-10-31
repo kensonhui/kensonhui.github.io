@@ -15,7 +15,7 @@ function slugify(title: string): string {
 
 const rawPosts: Array<Omit<BlogPost, "slug">> = [
   {
-    date: "2025-10-31",
+    date: "2025-10-30",
     title: "On Sacrifice",
     content: `
     You can have everything you want, just not all at once.
@@ -35,7 +35,7 @@ const rawPosts: Array<Omit<BlogPost, "slug">> = [
     `,
   },
   {
-    date: "2025-10-30",
+    date: "2025-10-29",
     title: "On Energy",
     content: `
     The most important resource you have is enthusiasm. 
