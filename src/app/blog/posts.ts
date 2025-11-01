@@ -15,6 +15,25 @@ function slugify(title: string): string {
 
 const rawPosts: Array<Omit<BlogPost, "slug">> = [
   {
+    date: "2025-10-31",
+    title: "On Scary Things",
+    content: `
+    Pursuing the thing that's scaring you is the fastest way to grow.
+
+    I used to be scared of speaking to my peers, going to Socratica events, because I always felt "not good enough." In a sense, I began making excuses to not pursue the things that I really wanted because of my fear.
+
+    We like to believe that we are rational, but the truth is we operate more on a bounded rationality basis. The boundary that forms around us is invisible, but made up of our unconscious biases, fears, and comfort with familarity.
+
+    In order to succeed, we need to do things most people aren't willing to do. That's our competitive advantage as a young adult, is the being able to put in more work and scary things that other people just wouldn't do.
+
+    That's why the goal of all the scary things I try to do on a daily basis is to remove those barriers, so I can achieve a mindset that will allow me to do what others aren't willing to do. This is the winning mindset. Today, this scary thing was posting on LinkedIn and asking my friends to like and comment for visibility. I need to do this to increase traffic to my site, which will increase the authority of Pierview, and lead it to ranking higher via Pagerank. 
+
+    It's a step in the right direction. I'm proud of the trust and self-belief I have in myself, thinking even if this post makes me look stupid, I know it's the necessary step we need to take to grow.
+
+    I remember in my early university years the unsufferable feeling of taking these grueling scary steps. Looking back on it, the reason I'm the person I am today was the culmulation of all these small scary steps. The leap would be impossible, but by compartmentalizing the vision of the mindset that would allow me to do anything I need to do, into small discret scary steps, it brings forth it into reality.
+    `,
+  },
+  {
     date: "2025-10-30",
     title: "On Sacrifice",
     content: `
