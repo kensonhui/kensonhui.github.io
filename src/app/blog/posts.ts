@@ -15,6 +15,23 @@ function slugify(title: string): string {
 
 const rawPosts: Array<Omit<BlogPost, "slug">> = [
   {
+    date: "2025-11-01",
+    title: "Falling out of systems",
+    content: `
+    Recently, I've been not doing the best. My room is a mess, I haven't exercised in the past two days, I've been anxious over making marketing posts.
+
+    It's a bit tricky, I've put all my bets on this startup, and I'm starting to feel the pain. This Halloween, I could be dressed up as a monkey and dance the night away.
+
+    Instead, I'm here in my messy room, staring down our competitors, wondering if we can replicate the same level of success they've had, except they're 1 year into the game before us.
+
+    I've also felt sad as I haven't felt as connected with my fmaily members. I feel a sense of lonliness that haunts me. I can't keep living like this, and one thing that I can do that would significantly bring everything back in my life together would be fixing my sleep schedule.
+
+    So from here on out, I will always be in bed by 2am, pushing it one minute back every day until we hit 1am.
+
+    Let's focus on this one thing for now, and I'll be back with more updates soon.
+    `,
+  },
+  {
     date: "2025-10-31",
     title: "On Scary Things",
     content: `
