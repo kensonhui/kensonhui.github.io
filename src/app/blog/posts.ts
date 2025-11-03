@@ -15,8 +15,21 @@ function slugify(title: string): string {
 
 const rawPosts: Array<Omit<BlogPost, "slug">> = [
   {
+    date: "2025-11-02",
+    title: "On Following Through",
+    content: `
+    Today, I followed through and got my beauty sleep in. It's a small thing, but waking up feeling decently great is so underrated.
+
+    I got a good run in, I went to Markville mall, and grinded a ton.
+
+    Although I had existential dread about our startup. I was thinking about the feasibility of the idea, and whether we can have a competitive advantage. We found agreement and settled on a potential solution. So there's been restored hope, let's see how it goes.
+
+    Most important takeaway, is showing up for yourself.
+    `,
+  },
+  {
     date: "2025-11-01",
-    title: "Falling out of systems",
+    title: "Falling Out of Systems",
     content: `
     Recently, I've been not doing the best. My room is a mess, I haven't exercised in the past two days, I've been anxious over making marketing posts.
 
