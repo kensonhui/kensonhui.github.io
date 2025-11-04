@@ -15,6 +15,24 @@ function slugify(title: string): string {
 
 const rawPosts: Array<Omit<BlogPost, "slug">> = [
   {
+    date: "2025-11-3",
+    title: "Observability is king",
+    content: `
+    Information is lost as you go from end customer to developer, there's entropy.
+
+    Solution: PostHog
+    I basically spend every morning watching session replays. That's because you shouldn't just rely on what your customers tell you but more importantly is observing how your customers act.
+
+    - Which pages do they spend the most time?
+    - Where do they get stuck?
+    - When do they mistaken something as clickable?
+
+    You learn so much from observing user behaviour, and the bonus is that watching replays can help significantly with QA. The reality is that when you're shipping with high velocity, a lot of bugs will make it through. But the highest agency play is to observe them having any issues, fix it for them, and then tell them that you fixed it due to their help.
+
+    Similar with relationships, actions speak louder than words.
+    `,
+  },
+  {
     date: "2025-11-02",
     title: "On Following Through",
     content: `
