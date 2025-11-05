@@ -15,7 +15,24 @@ function slugify(title: string): string {
 
 const rawPosts: Array<Omit<BlogPost, "slug">> = [
   {
-    date: "2025-11-3",
+    date: "2025-11-04",
+    title: "Being more casual",
+    content: `
+    I've always noticed how being too respectful oftentimes leads to people feeling less comfortable around me.
+
+    For example, in Chinese culture it's respectful to not let your guard down at a host's palce. Even when the host says to relax, your shoulders never really let go.
+
+    This display of respect is really helpful with showing respect, however when it comes to accepting your message, people won't see your words as authentic.
+    
+    This is a huge issue when it comes to American corporate culture, it's easy to slip into this respect-abiding practices by habit, but the most important lesson is to always keep things casual.
+
+    What does this look like? It's talking to potential clients as friends instead of doing a formal presentation, using casual words for your LinkedIn post, and generally taking up more space.
+    
+    There's a disconnect I feel as a Canadian born Chinese where I'm balancing these two cultures, and if I leave ourselves on autopilot, I'll won't be in the right mode to deliver a lasting impression.
+    `,
+  },
+  {
+    date: "2025-11-03",
     title: "Observability is king",
     content: `
     Information is lost as you go from end customer to developer, there's entropy.
@@ -34,7 +51,7 @@ const rawPosts: Array<Omit<BlogPost, "slug">> = [
   },
   {
     date: "2025-11-02",
-    title: "On Following Through",
+    title: "On following through",
     content: `
     Today, I followed through and got my beauty sleep in. It's a small thing, but waking up feeling decently great is so underrated.
 
@@ -47,7 +64,7 @@ const rawPosts: Array<Omit<BlogPost, "slug">> = [
   },
   {
     date: "2025-11-01",
-    title: "Falling Out of Systems",
+    title: "Falling out of system",
     content: `
     Recently, I've been not doing the best. My room is a mess, I haven't exercised in the past two days, I've been anxious over making marketing posts.
 
@@ -64,7 +81,7 @@ const rawPosts: Array<Omit<BlogPost, "slug">> = [
   },
   {
     date: "2025-10-31",
-    title: "On Scary Things",
+    title: "On scary things",
     content: `
     Pursuing the thing that's scaring you is the fastest way to grow.
 
@@ -83,7 +100,7 @@ const rawPosts: Array<Omit<BlogPost, "slug">> = [
   },
   {
     date: "2025-10-30",
-    title: "On Sacrifice",
+    title: "On sacrifice",
     content: `
     You can have everything you want, just not all at once.
 
@@ -103,7 +120,7 @@ const rawPosts: Array<Omit<BlogPost, "slug">> = [
   },
   {
     date: "2025-10-29",
-    title: "On Energy",
+    title: "On energy",
     content: `
     The most important resource you have is enthusiasm. 
     It's what makes you help others feel a sparkle. 
