@@ -15,6 +15,23 @@ function slugify(title: string): string {
 
 const rawPosts: Array<Omit<BlogPost, "slug">> = [
   {
+    date: "2025-11-05",
+    title: "Feels like life has been put on pause",
+    content: `
+    Ever since I started working on my startup, life has felt like it's gone on pause.
+
+    I wake up, work on my startup, occassionally run, eat, and go to sleep.
+
+    Watching my friends host events, hanging out, and having fun it makes me feel a little meloncholy.
+
+    I'm okay with it for now. It's just a temporary feeling, to build foundations first before dabbling in activities that bring you joy, but aren't productive in the traditional sense.
+
+    It's a privilege to do what I'm doing, I'm grateful for my family's support. Let's do the best with the opportunity I have here on my hands.
+
+
+    `,
+  },
+  {
     date: "2025-11-04",
     title: "Being more casual",
     content: `
