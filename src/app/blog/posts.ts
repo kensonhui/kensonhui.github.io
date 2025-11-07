@@ -15,6 +15,31 @@ function slugify(title: string): string {
 
 const rawPosts: Array<Omit<BlogPost, "slug">> = [
   {
+    date: "2025-11-06",
+    title: "You know what you have to do, get it done",
+    content: `
+    The thing i've noticed most, is that I actually do know what I have to do.
+
+    The issue isn't doing the task, but first emotionally preparing myself to do that certian task.
+
+    For example, if I wanted to build a great network, I need to talk to people. However, I have a fear of meeting new people, why? It's because there's that uncertainty, the feeling of stress encountering someone you've never met before. I feel my body on the edge: wondering if the person in front of me is a threat or friend.
+
+    I had this realization early, and decided to do a scary thing everyday which was centered around social interactions. I would initiate small talk with people at bus stops, at events, at parties, and I did thousands of reps.
+
+    Where did it all start? Becoming certain that I was going to do it, mentally preparing myself, reciting the lines in my head, and eventually, I got very comfortable at networking.
+
+    The most important takeawy is I believe the people who succeed the most are the ones who are able to be most emotionally in-tune with themselves, and are able to pick themselves up and continue pursuing discomfort.
+
+    That's the funny thing, is that to continuously grow, you have to face discomfort as you have to go beyond your ordinary comfort zone. You have to continuously face that discomfort, whether it be in career, relationships, or just personal growth.
+
+    This reminds me of a Ukrainian study on boxers that found that there was a correlation between aggression and emotional intelligence. Boxers have to handle intense mental pressure, doubts about their skills, fear from their opponent, and the mounting pressure from the audiene. It makes sense that boxers need to be emotionally in-tune with themselves, to ease themselves from the stress, to have unwavering conviction even faced against the toughest opponents. That takes serious guts.
+
+    Just like boxers, we will face intense mental pressure. We'll worry about losing, being humiliated, and getting hurt. But the truth is all the words from the spectators are worthless, why? They aren't in the arena. They don't understand what it's truly like. That's why I don't judge when someone has a failed business, or if they lose in a competition. To be in the arena is the greatest glory you can have, I have so much respect to those who facae that challenge.
+
+    It is all a mental gamee, and the best way to win is to be emotionally prepared to take hits and get back up.
+    `,
+  },
+  {
     date: "2025-11-05",
     title: "Feels like life has been put on pause",
     content: `
@@ -89,7 +114,7 @@ const rawPosts: Array<Omit<BlogPost, "slug">> = [
 
     Instead, I'm here in my messy room, staring down our competitors, wondering if we can replicate the same level of success they've had, except they're 1 year into the game before us.
 
-    I've also felt sad as I haven't felt as connected with my fmaily members. I feel a sense of lonliness that haunts me. I can't keep living like this, and one thing that I can do that would significantly bring everything back in my life together would be fixing my sleep schedule.
+    I've also felt sad as I haven't felt as connected with my family members. I feel a sense of lonliness that haunts me. I can't keep living like this, and one thing that I can do that would significantly bring everything back in my life together would be fixing my sleep schedule.
 
     So from here on out, I will always be in bed by 2am, pushing it one minute back every day until we hit 1am.
 
