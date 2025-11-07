@@ -41,83 +41,87 @@ export default function Home() {
           w-full
           relative
           pb-8
+          flex
+          justify-center
+          max-w-7xl
         "
       >
-        <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100">
-          Building Together
-        </h2>
-        <p className="mt-4 text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-          Whether it's organizing events, mentoring peers, or jamming on
-          projects, I believe in bringing the right people together! Recently,
-          I've been investing time into:
-        </p>
-        <ul className="mt-4 space-y-1 text-gray-500 dark:text-gray-300 text-md">
-          <li className="flex items-center">
-            <span className="mr-2">🎨</span>
-            <span>
-              Hosting for{" "}
-              <a
-                href="https://www.socratica.info"
-                className="text-blue-600 dark:text-blue-400"
-                target="_blank"
-              >
-                Socratica
-              </a>
-              , an open-collective of designers, engineers, artists, and
-              everything in-between
-            </span>
-          </li>
-          <li className="flex items-center">
-            <span className="mr-2">🤖</span>
-            <span>
-              Hackathons! For example,{" "}
-              <a
-                href="https://www.youtube.com/watch?v=-6a8DRBq_QU"
-                className="text-blue-600 dark:text-blue-400"
-                target="_blank"
-              >
-                building a bass-playing robot in 36 hours.{" "}
-              </a>{" "}
-            </span>
-          </li>
-        </ul>
-
-        <Gallery
-          images={[
-            {
-              src: "/socratica3.jpg",
-              alt: "Socratica Symposium 3",
-              caption: "Socratica Symposium 2025",
-              gridSpan: "md:col-span-2 md:row-span-2", // 2x2 span
-              url: "https://www.socratica.info/",
-            },
-            {
-              src: "/bracketbot.jpg",
-              alt: "BracketBot Project",
-              caption: "Built a bass-playing robot in 36 hours",
-              gridSpan: "md:col-span-1 md:row-span-2", // 1x2 span
-              url: "https://www.youtube.com/watch?v=-6a8DRBq_QU",
-            },
-            {
-              src: "/socratica5.jpg",
-              alt: "Socratica Symposium 5",
-              caption: "Friends of Socratica!",
-              url: "https://www.socratica.info/",
-            },
-            {
-              src: "/demo.gif",
-              alt: "Demo of Bracketbot Bass",
-              caption: "Bass-playing Robot on Action",
-              url: "https://www.youtube.com/watch?v=-6a8DRBq_QU",
-            },
-            {
-              src: "/jam_night.jpg",
-              alt: "Jam Night",
-              caption: "Jam night with friends",
-              url: "https://partiful.com/e/STPtSjwy3lCAGeqegl1c",
-            },
-          ]}
-        />
+        <div>
+          <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100">
+            Building Together
+          </h2>
+          <p className="mt-4 text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+            Whether it's organizing events, mentoring peers, or jamming on
+            projects, I believe in bringing the right people together! Recently,
+            I've been investing time into:
+          </p>
+          <ul className="mt-4 space-y-1 text-gray-500 dark:text-gray-300 text-md">
+            <li className="flex items-center">
+              <span className="mr-2">🎨</span>
+              <span>
+                Hosting for{" "}
+                <a
+                  href="https://www.socratica.info"
+                  className="text-blue-600 dark:text-blue-400"
+                  target="_blank"
+                >
+                  Socratica
+                </a>
+                , an open-collective of designers, engineers, artists, and
+                everything in-between
+              </span>
+            </li>
+            <li className="flex items-center">
+              <span className="mr-2">🤖</span>
+              <span>
+                Hackathons! For example,{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=-6a8DRBq_QU"
+                  className="text-blue-600 dark:text-blue-400"
+                  target="_blank"
+                >
+                  building a bass-playing robot in 36 hours.{" "}
+                </a>{" "}
+              </span>
+            </li>
+          </ul>
+          <Gallery
+            images={[
+              {
+                src: "/socratica3.jpg",
+                alt: "Socratica Symposium 3",
+                caption: "Socratica Symposium 2025",
+                gridSpan: "md:col-span-2 md:row-span-2", // 2x2 span
+                url: "https://www.socratica.info/",
+              },
+              {
+                src: "/bracketbot.jpg",
+                alt: "BracketBot Project",
+                caption: "Built a bass-playing robot in 36 hours",
+                gridSpan: "md:col-span-1 md:row-span-2", // 1x2 span
+                url: "https://www.youtube.com/watch?v=-6a8DRBq_QU",
+              },
+              {
+                src: "/socratica5.jpg",
+                alt: "Socratica Symposium 5",
+                caption: "Friends of Socratica!",
+                url: "https://www.socratica.info/",
+              },
+              {
+                src: "/demo.gif",
+                alt: "Demo of Bracketbot Bass",
+                caption: "Bass-playing Robot on Action",
+                url: "https://www.youtube.com/watch?v=-6a8DRBq_QU",
+              },
+              {
+                src: "/jam_night.jpg",
+                alt: "Jam Night",
+                caption: "Jam night with friends",
+                url: "https://partiful.com/e/STPtSjwy3lCAGeqegl1c",
+              },
+            ]}
+          />
+        </div>
       </section>
       <Experience />
       <Projects
